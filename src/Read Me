@@ -1,0 +1,28 @@
+sentiment-analysis-project/
+├── README.md                # This file (short overview on GitHub)
+├── data/
+│   ├── sample_reviews.csv   # small sample dataset (500-1000 rows)
+│   └── raw_reviews.csv      # optional full dataset (not committed)
+├── notebooks/
+│   ├── EDA.ipynb            # exploratory data analysis notebook
+│   ├── modeling.ipynb       # experiments & model training notebook
+│   └── deployment_demo.ipynb# demo of prediction API usage
+├── src/
+│   ├── __init__.py
+│   ├── config.py            # configuration (paths, params)
+│   ├── data_processing.py   # functions: load, clean, preprocess
+│   ├── features.py          # TF-IDF pipeline and feature utilities
+│   ├── models.py            # model training, save/load
+│   ├── evaluate.py          # metrics & report generation
+│   ├── api.py               # Flask app to serve predictions
+│   └── utils.py             # helpers: logging, cache
+├── tests/
+│   ├── test_preprocess.py
+│   └── test_model.py
+├── requirements.txt
+├── Dockerfile
+├── .gitignore
+├── train.sh                 # script to train model locally
+├── predict.sh               # sample predict script
+├── ci.yml                   # GitHub Actions basic CI pipeline
+└── LICENSE
